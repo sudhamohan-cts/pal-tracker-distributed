@@ -15,7 +15,8 @@ jobs:
           java-version: 11
       - name: Create test database
         run: |
-          mysql -uroot -psmp123 < databases/create_databases.sql
+          sudo systemctl start mysql
+          mysql -uroot -proot < databases/create_databases.sql
           ./gradlew testMigrate
       - name: Build with Gradle
         run: ./gradlew clean build
