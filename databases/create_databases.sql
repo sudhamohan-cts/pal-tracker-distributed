@@ -1,3 +1,4 @@
+
 DROP DATABASE IF EXISTS tracker_allocations_dev;
 DROP DATABASE IF EXISTS tracker_backlog_dev;
 DROP DATABASE IF EXISTS tracker_registration_dev;
